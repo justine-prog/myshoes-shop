@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const { Shoes Adidas SL 72 RED, 80€ } = req.body;
+    const { name,price } = req.body;
 
     const firebaseUrl = process.env.FIREBASE_PROJECT_ID+'/products.json';
     console.log("Add rodukt url  "+firebaseUrl);
