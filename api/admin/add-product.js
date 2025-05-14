@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const { name, price } = req.body;
+    const { Shoes Adidas SL 72 RED, 80€ } = req.body;
 
     const firebaseUrl = process.env.FIREBASE_PROJECT_ID+'/products.json';
     console.log("Add rodukt url  "+firebaseUrl);
@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const response = await fetch(firebaseUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, price })
+      body: JSON.stringify({ Shoes Adidas SL 72 RED, 80€ })
     });
 
     if (!response.ok) {
